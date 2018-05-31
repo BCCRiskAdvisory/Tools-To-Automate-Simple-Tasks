@@ -9,6 +9,8 @@ To use the program simply open up a terminal navigate to the directory and run i
 ### Sample Output
 ![alt text](screenshots/overview.png "Sample Output")
 
+![alt text](screenshots/overview2.png "Sample Output")
+
 
 ### Built With
 
