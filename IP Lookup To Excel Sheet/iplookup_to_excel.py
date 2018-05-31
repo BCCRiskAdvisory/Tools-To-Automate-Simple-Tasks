@@ -37,8 +37,15 @@ sheet1.write(0, 0, "Domain") # create header for first column
 sheet1.write(0, 1, "IP") # Create Header For Second Column
 
 # Open File Containing The Domains
-with open(eval(filename), 'r') as f:
-	ip_list = f.readlines()
+try:
+	with open(eval(filename), 'r') as f:
+		ip_list = f.readlines()
+except:
+	try:
+		with open(filename, 'r') as f:
+			ip_list = f.readlines()
+	except Exception as e:
+		print e
 	
 i = 1
 # While loop to iterate through the client list and test is it vulnerable to the beast attack
